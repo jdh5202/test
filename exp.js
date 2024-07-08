@@ -1,5 +1,5 @@
 function execute() {
-  var nuri = "http://192.168.0.16/admin/config";
+  var nuri = "http://192.168.0.16:8080/admin/config";
   xhttp = new XMLHttpRequest();
   xhttp.open("POST", nuri, true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -11,3 +11,4 @@ function execute() {
   return true;
 }
 execute();
+alert(1);
